@@ -145,7 +145,7 @@ int main(int argc, char *argv[]) {
 	while (1) {
 		int num=-1;
 		bool lineskip=false;
-        memset(str,0,sizeof(str));
+        	memset(str,0,sizeof(str));
 		fgets(str,60,fp);
 		if (feof(fp)){
 			break;
@@ -179,11 +179,11 @@ int main(int argc, char *argv[]) {
 			else pre=false;
 		}
 		
-		//printf("%s\n",str);
+		
 		if (num+1 != 0 && !lineskip) {
 			Line+=1;
 		}
-               // printf("%d -%d\n ",num+1,Line);
+             
 		if (Line==1&&!lineskip){
 			if (num+1 < 2){
 				printf("File Structure Error(Max_x Max_y line has only one int.)\n");
